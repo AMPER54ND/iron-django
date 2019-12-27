@@ -1,17 +1,29 @@
 {% load static %}
 <html>
   <head>
-    <title>Django OWASP</title>
+    
+    {% block title %}
+      <title>Django OWASP</title>
+    {% endblock %}
+
+    {% block stylesheets %}
+    
+    {% endblock %}
+
   </head>
   <body>
     {% block breadcrumbs %}
+      <span><img height="50px" width="50px" src="{% static 'img/head-logo.png' %}"></span>
       <span><a href="{% url 'index' %}">Home</a></span> |
       <span><a href="{% url 'messageboard' %}">Message Board</a></span> |
+      <span><a href="{% url 'vote' %}">Vote</a</span> |
       <br/>
       <br/>
       <br/>
     {% endblock %}
     {% block content %}
+    {% endblock %}
+    {% block scripts %}
     {% endblock %}
   </body>
 </html>
