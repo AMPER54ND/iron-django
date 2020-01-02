@@ -1,21 +1,26 @@
-# Setting up Iron-Django
+# Setting up Iron-Django and the OWASP application
 
 ## Start Steps
 
-1. Install the latest version of Python 3 from your Distro Repository
+1. Install the latest version of Python 3 from your distro repository
     ```
     sudo apt-get install python3
     ```
 
 1. Clone this project
     ```
-    git clone git@git.sp.darkwolf.io:will/brewwolf-python.git
+    git clone XXXXX
     ```
 
-1. Go into the project and create the virtual-environment
+1. Create your python virtual-environment
     ```
-    cd brewwolf-python
+    cd brewwolf
     python3 -m venv venv
+    source venv/bin/activate
+    ```
+    
+1. Source your python virtual-environment    
+    ```
     source venv/bin/activate
     ```
 
@@ -25,7 +30,12 @@
     pip install -r requirements.txt
     ```
 
-1. Start the notebook
+1. Collect the static files within the brewwolf project
     ```
-    jupyter notebook
+    python manage.py collectstatic
+    ```
+
+1. Start the Server using the "manage.py" found within the brewwolf project
+    ```
+    python manage.py runserver
     ```
