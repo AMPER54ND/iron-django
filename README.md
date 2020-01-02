@@ -1,10 +1,10 @@
-# Starting the Jupyter Notebook
+# Setting up Iron-Django
 
 ## Start Steps
 
-1. Install Python3.6 however suits you
+1. Install the latest version of Python 3 from your Distro Repository
     ```
-    sudo dnf install python36
+    sudo apt-get install python3
     ```
 
 1. Clone this project
