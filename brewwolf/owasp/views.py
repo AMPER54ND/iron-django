@@ -64,3 +64,6 @@ def Messageboard(request):
 def index(request):
     return render(request, 'index.html')
 
+def Vote(request):
+    return render(request, 'vote.html')
+
