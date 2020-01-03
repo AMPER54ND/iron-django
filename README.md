@@ -2,7 +2,7 @@
 
 This is a forked repository from sketchybinary's iron-django project, a Django project containing examples of "best-practices" when building an application using Django REST framework. This forked version contains the OWASP application which demonstrates live examples of web-app vulnerabilities found in OWASP's Top 10. 
 
-## Start Steps
+## Setup
 
 1. Install the latest version of Python 3 from your distro repository
     ```
