@@ -29,6 +29,7 @@ This is a forked repository from sketchybinary's iron-django project, a Django p
 1. Update pip and install requirements
     ```
     pip install --upgrade pip
+    (OPTIONAL) pip install django
     pip install -r requirements.txt
     ```
 
