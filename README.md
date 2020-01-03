@@ -37,6 +37,16 @@ This is a forked repository from sketchybinary's iron-django project, a Django p
     ```
     python manage.py collectstatic
     ```
+    
+1. Creating schema for database tables
+    ```
+    python manage.py make migrations
+    ```
+    
+1. Building Tables
+    ```
+    python manage.py migrate
+    ```
 
 1. Start the Server using the "manage.py" found within the brewwolf project
     ```
