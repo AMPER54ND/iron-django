@@ -19,7 +19,6 @@ This is a forked repository from sketchybinary's iron-django project, a Django p
     ```
     cd brewwolf
     python3 -m venv venv
-    source venv/bin/activate
     ```
     
 1. Source your python virtual-environment    
