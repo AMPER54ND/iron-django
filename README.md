@@ -7,6 +7,7 @@ This is a forked repository from sketchybinary's iron-django project, a Django p
 1. Install the latest version of Python 3 from your distro repository
     ```
     sudo apt-get install python3
+    sudo apt-get install python3-venv
     ```
 
 1. Clone this project
