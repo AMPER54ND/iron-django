@@ -41,7 +41,7 @@ This is a forked repository from sketchybinary's iron-django project, a Django p
     
 1. Creating schema for database tables
     ```
-    python manage.py make migrations
+    python manage.py makemigrations
     ```
     
 1. Building Tables
