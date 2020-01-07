@@ -12,7 +12,7 @@ This is a forked repository from sketchybinary's iron-django project, a Django p
 
 1. Clone this project
     ```
-    git clone git@github.com:AMPER54ND/iron-django.git
+    git@github.com:AMPER54ND/tin-django.git
     ```
 
 1. Create your python virtual-environment
