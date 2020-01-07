@@ -21,18 +21,22 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
+
+# Static SECRET_KEY is bad
+SECRET_KEY = "x9ubs%m*mo41-+6sb#@_**jlimxs#!a$61%5u5336xt$8$vet-"
+
 # Accept SECRET_KEY from the environment or assume we need to build a new one
-SECRET_KEY = os.environ.get(
-    "SECRET_KEY",
-    "".join(
-        [
-            random.SystemRandom().choice(
-                "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)"
-            )
-            for i in range(50)
-        ]
-    ),
-)
+# SECRET_KEY = os.environ.get(
+#    "SECRET_KEY",
+#    "".join(
+#        [
+#            random.SystemRandom().choice(
+#                "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)"
+#            )
+#            for i in range(50)
+#        ]
+#    ),
+#)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DJANGO_DEBUG")
@@ -134,6 +138,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -147,6 +152,9 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Session Settings to make less secure
+SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer' 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
